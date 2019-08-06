@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function SimpleCard(props) {
+export default function Cards(props) {
   const classes = useStyles();
 
   return (
@@ -35,7 +35,6 @@ export default function SimpleCard(props) {
           <img src={props.user.avatar_url} alt="avatar" />
         </Typography>
       </CardContent>
-      s
     </Card>
   );
 }
