@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Cards from "./components/Cards";
 import axios from "axios";
+import Followers from "./components/Followers";
 
 class App extends React.Component {
   constructor() {
@@ -32,6 +33,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <Cards user={this.state.Cards} />
+        {this.state.key.map(follower => (
+          <Followers follower={follower} />
+        ))}
       </div>
     );
   }
